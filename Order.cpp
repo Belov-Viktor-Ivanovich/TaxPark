@@ -28,3 +28,28 @@ void Order::print()
 	cout << "Driver : ";
 	cout<<driver.name<<" "<<driver.tel<<endl;
 }
+
+float Order::convertMin()
+{
+	int a = time;
+	float b = time - a;
+	cout << b << endl;
+	b *= 100;
+	a *= 60;
+	a += b;	
+	return a;
+}
+
+
+float Order::allPrice()
+{
+	int price = 0;
+	if (convertMin() >= 450 && convertMin() < 1020)return this->km * 30 + this->minPriceOrder;
+	else return this->km * 25 + this->minPriceOrder;
+}
+float Order::procentCompany()
+{
+	float a= allPrice() / 100 * 15;
+	
+	return a;
+}

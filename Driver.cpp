@@ -21,10 +21,4 @@ void Driver::print()
 {
 	cout << "Name Driver : " << this->name << "\t" << "Phone : " << this->tel;
 }
-float Order:: profit()
-{
-	int a = time;
-	float b = time - a;
-	cout << b;
-	return this->price;
-}
+

@@ -31,8 +31,7 @@ int main()
     //taxPark.printOrder();
     Order::orderCar(car2, driver2, taxPark,10,15.30);
     taxPark.printOrder();
-    Order order(car3, driver2, 10, 15.30);
-    cout << order.profit();
+    taxPark.pribCompany();
 
     
     

@@ -25,6 +25,8 @@ public:
 	void printDriver();
 	void printCarS();
 	void printOrder();
+	void pribCompany();
+	void addProfit(float a);
 	
 
 	

@@ -4,6 +4,7 @@
 #include "TaxPark.h"
 #include "Driver.h"
 #include "Car.h"
+
 using namespace std;
 class Order
 {
@@ -23,8 +24,9 @@ public:
 	Order(Car& car, Driver& driver,int km,float time);
 	static void orderCar(Car& car, Driver& driver, TaxPark& taxPark,int km, float time);
 	void print();
-	float profit();
-
+	float convertMin();
+	float allPrice();
+	float procentCompany();
 
 };
 

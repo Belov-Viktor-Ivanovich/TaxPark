@@ -73,4 +73,18 @@ void TaxPark::printOrder()
 	}
 }
 
+void TaxPark::pribCompany()
+{
+	int a = 0;
+	for (int i = 0; i < order.size(); i++)
+	{
+		a+=order[i].procentCompany();
+	}
+	cout << "PriBbll company = " << a;
+}
+
+void TaxPark::addProfit(float a)
+{
+	profit.push_back(a);
+}
 
